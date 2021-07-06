@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+
+button {
+  outline: none;
+  height: 40px;
+  text-align: center;
+  width: 130px;
+  border-radius: 40px;
+  background: #f13c6e;
+  border: 0px solid #f13c6e;
+  color: white;
+  letter-spacing: 1px;
+  text-shadow: 0;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+button:hover {
+  color: white;
+  background: #f1668b;
+}
+button:active {
+  letter-spacing: 2px;
+}
+
+img {  
+  object-fit: scale-down;
+  width: inherit; 
+  height: inherit;
+}
+
+.main{
+	background: white;
+  display: flex;
+  justify-content: center;
+}
+.warp{
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+.cart{
+ width: 20%;
+ background: white;
+ margin: 2%;
+ text-align: center;
+ font-family: 'Raleway', sans-serif;
+ display: inline-block;
+}
+
+.cart img{
+ max-width: 90%;
+}
+
+.cart_wraper{
+  width:  100%; 
+  height:  40%;
+}
+
+
+.overlay {
+   
+
+   opacity: 0;
+   visibility: hidden;
+   
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0, 0, 0, .5);
+   z-index: 20;
+   transition: .3s all;
+}
+
+
+.modal {
+   opacity: 0;
+   visibility: hidden;
+   
+
+   width: 100%;
+   max-width: 500px;
+   
+ 
+   position: fixed;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   z-index: 30;   
+   box-shadow: 0 3px 10px -.5px rgba(0, 0, 0, .2); 
+   text-align: left;
+   padding: 30px;
+   border-radius: 3px;
+   background-color: #fff;
+   transition: 0.3s all;
+   font-family: 'Raleway', sans-serif;
+}
+.modal input{
+	text-align: center;
+
+}
+
+.modal.active,
+.overlay.active{
+   opacity: 1;
+   visibility: visible;
+}
+
+.modal__cross {
+   width: 15px;
+   height: 15px;
+   position: absolute;
+   top: 20px;
+   right: 20px;
+   fill: #444;
+   cursor: pointer;
+}
+
+  .form-buy {
+    display: flex;
+    flex-direction: column;
+  }
+  .form-buy > label{
+    width: 100%;
+  }
+  .form-buy > label > input{
+    width: 100%;
+    height: 2em;
+    margin-bottom: 10px;
+  }
+  .modal-footer {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 15px;
+  }
+
+
+
+
